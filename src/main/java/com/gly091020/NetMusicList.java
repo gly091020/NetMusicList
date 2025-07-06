@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class NetMusicList implements ModInitializer {
     public static final String ModID = "net_music_list";
-    public static final NetMusicListItem MUSIC_LIST_ITEM = new NetMusicListItem(new Item.Settings());
+    public static final NetMusicListItem MUSIC_LIST_ITEM = new NetMusicListItem(new Item.Settings().maxCount(1));
     @Override
     public void onInitialize() {
         Registry.register(Registries.ITEM, new Identifier(ModID, "music_list"), MUSIC_LIST_ITEM);
