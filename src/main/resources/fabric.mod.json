@@ -23,8 +23,9 @@
     "netmusiclist.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
+    "fabricloader": "*",
     "fabric": "*",
+    "netmusic": "*",
     "minecraft": "${minecraft_version}"
   }
 }
