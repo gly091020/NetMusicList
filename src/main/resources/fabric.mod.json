@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "net_music_list",
+  "version": "${version}",
+  "name": "NetMusicList",
+  "description": "背着一背包的唱片可不是件好事",
+  "authors": [
+    "gly091020"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/net_music_list/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.gly091020.client.NetMusicListClient"
+    ],
+    "main": [
+      "com.gly091020.NetMusicList"
+    ]
+  },
+  "mixins": [
+    "netmusiclist.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
